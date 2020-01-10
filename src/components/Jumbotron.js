@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
+import { Jumbotron as Jumbo} from 'react-bootstrap';
 import styled from 'styled-components';
 import csgoLogo from '../assets/csgoLogo.jpg';
 
@@ -29,10 +29,6 @@ export const Jumbotron = () => (
     <Styles>
         <Jumbo fluid className="jumbo">
             <div className="overlay"></div>
-            {/* <Container>
-                <h1>Welcome</h1>
-                <p> Learn how to rek noobs </p>
-            </Container> */}
         </Jumbo>
     </Styles>
 )

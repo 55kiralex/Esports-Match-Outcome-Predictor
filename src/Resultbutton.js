@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { Button2, ButtonGroup } from 'reactstrap';
 import Button from 'react-bootstrap/Button';
 
 const Resultbutton = (props) => {
-  const [cSelected, setCSelected] = useState([]);
-  const [rSelected, setRSelected] = useState(null);
+  const [rSelected] = useState(null);
 
-  const clickButton = (selected) => {
+  const clickButton = () => {
     props.clickBtn()
   }
   return (

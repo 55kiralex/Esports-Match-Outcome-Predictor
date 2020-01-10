@@ -3,17 +3,16 @@ import { Button, ButtonGroup } from 'reactstrap';
 import Row from 'react-bootstrap/Row'
 
 const Radio = (props) => {
-  const [cSelected, setCSelected] = useState([]);
   const [rSelected, setRSelected] = useState(null);
   const onCheckboxBtnClick = (data) => {
     props.sendData(data)
-    if(data == "America"){
+    if(data === "America"){
       setRSelected(1)
     }
-    else if(data == "Asia"){
+    else if(data === "Asia"){
       setRSelected(2)
     }
-    else if(data == "Europe"){
+    else if(data === "Europe"){
       setRSelected(3)
     }
   }

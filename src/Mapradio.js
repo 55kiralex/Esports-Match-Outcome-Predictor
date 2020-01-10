@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button, ButtonGroup } from 'reactstrap';
 import Dust2 from './assets/Dust_2.png';
 import mirage from './assets/mirage.png';
@@ -8,16 +8,11 @@ import nuke from './assets/nuke.png';
 import overpass from './assets/overpass.png';
 import vertigo from './assets/vertigo.png';
 import train from './assets/train.png';
-import Image from 'react-image-resizer';
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 
 export default class MapRadio extends React.Component{
-  constructor(props){
-    super(props)
-    // this.onCheckboxBtnClick = this.onCheckboxBtnClick.bind(this)
-  }
 
   onCheckboxBtnClick(s){
     this.props.sendData(s)
